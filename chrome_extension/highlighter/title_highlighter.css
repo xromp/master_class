@@ -1,0 +1,11 @@
+.highlight { 
+    background-color:#FFFF00; 
+}
+
+.thanos {
+    position: absolute;
+    float: left;
+    left: 50%;
+    width: fit-content;
+    z-index: 9999999;
+}

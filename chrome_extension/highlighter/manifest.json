@@ -1,0 +1,31 @@
+{
+    "manifest_version":2,
+    "name": "Highlighter Extensions",
+    "version": "1.0",
+    "description" : "Build a simple extension",
+    "content_scripts": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "js": ["content.js"],
+        "css": ["title_highlighter.css"]
+      }
+    ],
+    "background": {
+        "scripts":["background.js"]
+    },
+    "browser_action": {
+      "default_icon": "images/hello_extensions.png"
+    },
+    "web_accessible_resources":[
+      "thanos.gif",
+      "images/kittens/*.jpg"
+    ]
+    /* ,
+    "chrome_url_overrides" : {
+      "newtab":"templates/index.html"
+    } */
+  
+  }
+  
